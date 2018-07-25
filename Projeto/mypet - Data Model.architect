@@ -60,7 +60,7 @@
   <table id="TAB15" populated="true" UUID="7db16492-cfc9-4522-9fda-9ab55e67c95a" name="Endereço" objectType="TABLE" physicalName="ENDERECO" >
    <remarks></remarks>
    <folder id="FOLTAB151" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL16" populated="true" UUID="d9dbbe57-9df3-4eca-ac69-1646dea9453a" autoIncrement="false" autoIncrementSequenceName="ENDERECO_ID_ENDERECO_seq" defaultValue="" name="ID_ENDERECO" nullable="0" physicalName="ID_ENDERECO" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL16" populated="true" UUID="d9dbbe57-9df3-4eca-ac69-1646dea9453a" autoIncrement="true" autoIncrementSequenceName="ENDERECO_ID_ENDERECO_seq" defaultValue="" name="ID_ENDERECO" nullable="0" physicalName="ID_ENDERECO" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     <column id="COL17" populated="true" UUID="7eda1c0e-e05d-4799-81be-0e8b395d5a34" autoIncrement="false" autoIncrementSequenceName="USUARIO_ID_USUARIO_seq_1" defaultValue="" name="ID_USUARIO" nullable="0" physicalName="ID_USUARIO" precision="10" primaryKeySeq="1" referenceCount="1" scale="0" source-column-ref="COL2" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
@@ -157,7 +157,7 @@
     <column id="COL43" populated="true" UUID="0b2446ec-6e00-4958-9bc0-64488bfdcbae" autoIncrement="false" autoIncrementSequenceName="USUARIO_NOME_seq_1" defaultValue="" name="NOME" nullable="0" physicalName="NOME" precision="200" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL44" populated="true" UUID="21ae6e7a-ddf7-4920-be51-800a35012239" autoIncrement="false" autoIncrementSequenceName="ANIMAL_FOTO_seq" defaultValue="" name="FOTO" nullable="0" physicalName="FOTO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL44" populated="true" UUID="21ae6e7a-ddf7-4920-be51-800a35012239" autoIncrement="false" autoIncrementSequenceName="ANIMAL_FOTO_seq" defaultValue="" name="FOTO" nullable="0" physicalName="FOTO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2004" userDefinedTypeUUID="5c50e616-a448-40e1-abcd-5bfc04dcc607" >
      <remarks></remarks>
     </column>
     <column id="COL45" populated="true" UUID="52d13189-7ab7-470c-ab25-699adde7f1b6" autoIncrement="false" autoIncrementSequenceName="USUARIO_TP_ESPECIE_seq" defaultValue="" name="TP_ESPECIE" nullable="0" physicalName="TP_ESPECIE" precision="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
@@ -267,16 +267,16 @@
     </index>
    </folder>
   </table>
-  <table id="TAB76" populated="true" UUID="cb7f70fd-7071-4fd9-a349-01ba8f50eb1d" name="Atendimento e Procedimentos" objectType="TABLE" physicalName="Atendimento_e_Procedimentos" >
+  <table id="TAB76" populated="true" UUID="cb7f70fd-7071-4fd9-a349-01ba8f50eb1d" name="Atendimento e Procedimentos" objectType="TABLE" physicalName="ATENDIMENTO_PROCEDIMENTO" >
    <remarks></remarks>
    <folder id="FOLTAB761" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL77" populated="true" UUID="f713f878-f3e5-410b-8584-e98a567198dd" autoIncrement="true" autoIncrementSequenceName="Atendimento_e_Procedimentos_ID_ATENDIMENTO_PROCEDIMENTO_seq" defaultValue="" name="ID_ATENDIMENTO_PROCEDIMENTO" nullable="0" physicalName="ID_ATENDIMENTO_PROCEDIMENTO" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" source-column-ref="COL2" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL77" populated="true" UUID="f713f878-f3e5-410b-8584-e98a567198dd" autoIncrement="true" autoIncrementSequenceName="ATENDIMENTO_PROCEDIMENTO_ID_ATENDIMENTO_PROCEDIMENTO_seq" defaultValue="" name="ID_ATENDIMENTO_PROCEDIMENTO" nullable="0" physicalName="ID_ATENDIMENTO_PROCEDIMENTO" precision="10" primaryKeySeq="0" referenceCount="1" scale="0" source-column-ref="COL2" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL78" populated="true" UUID="ba27a101-13a2-4a44-a27f-f465bb82a095" autoIncrement="false" autoIncrementSequenceName="USUARIO_ID_PROCEDIMENTO_seq_1" defaultValue="" name="ID_PROCEDIMENTO" nullable="0" physicalName="ID_PROCEDIMENTO" precision="10" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL78" populated="true" UUID="ba27a101-13a2-4a44-a27f-f465bb82a095" autoIncrement="false" autoIncrementSequenceName="ATENDIMENTO_PROCEDIMENTO_ID_PROCEDIMENTO_seq" defaultValue="" name="ID_PROCEDIMENTO" nullable="0" physicalName="ID_PROCEDIMENTO" precision="10" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
-    <column id="COL79" populated="true" UUID="846103d6-a213-4552-b0cd-1b1670d46b5d" autoIncrement="false" autoIncrementSequenceName="USUARIO_ID_ATENDIMENTO_seq_2" defaultValue="" name="ID_ATENDIMENTO" nullable="0" physicalName="ID_ATENDIMENTO" precision="10" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
+    <column id="COL79" populated="true" UUID="846103d6-a213-4552-b0cd-1b1670d46b5d" autoIncrement="false" autoIncrementSequenceName="ATENDIMENTO_PROCEDIMENTO_ID_ATENDIMENTO_seq" defaultValue="" name="ID_ATENDIMENTO" nullable="0" physicalName="ID_ATENDIMENTO" precision="10" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="2" userDefinedTypeUUID="115245ce-612c-4d6a-b559-6dd903dd959a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -299,8 +299,8 @@
    <relationship id="REL86" populated="true" UUID="91b83d0b-2bda-491f-ae98-e3a4249ef363" deferrability="7" deleteRule="3" fk-table-ref="TAB51" fkCardinality="7" identifying="true" name="USUARIO_USUARIO_ANIMAL_fk" physicalName="USUARIO_USUARIO_ANIMAL_FK" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP87" populated="true" UUID="d13c187e-fd1a-4c9f-ab43-c59f47171f02" fk-column-ref="COL52" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL88" populated="true" UUID="f52c9563-3c4d-4fa7-9f6c-91127c7e8bc2" deferrability="7" deleteRule="3" fk-table-ref="TAB76" fkCardinality="7" identifying="true" name="PROCEDIMENTO_Atendimento e Procedimentos_fk" physicalName="PROCEDIMENTO_ATENDIMENTO_E_697" pk-table-ref="TAB24" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP89" populated="true" UUID="216c49e6-427d-40c6-a884-35685f0891a3" fk-column-ref="COL78" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL25" />
+   <relationship id="REL88" populated="true" UUID="f52c9563-3c4d-4fa7-9f6c-91127c7e8bc2" deferrability="7" deleteRule="3" fk-table-ref="TAB76" fkCardinality="7" identifying="true" name="PROC_ATEND_PROCED_FK" physicalName="PROC_ATEND_PROCED_FK" pk-table-ref="TAB24" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP89" populated="true" UUID="000251a5-b140-42ee-8eab-ebcd0e70c9a3" fk-column-ref="COL78" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL25" />
    </relationship>
    <relationship id="REL90" populated="true" UUID="5b140164-be8f-4a45-a16a-9fc92ecbbcdc" deferrability="7" deleteRule="3" fk-table-ref="TAB67" fkCardinality="7" identifying="true" name="INSUMO_ATENDIMENTO_INSUMO_fk" physicalName="INSUMO_ATENDIMENTO_INSUMO_FK" pk-table-ref="TAB32" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP91" populated="true" UUID="5fb076b0-bd53-4884-976f-efaaedbf91f1" fk-column-ref="COL69" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL33" />
@@ -311,15 +311,15 @@
    <relationship id="REL94" populated="true" UUID="d09da274-2f0e-47e0-a436-c106ac95e218" deferrability="7" deleteRule="3" fk-table-ref="TAB57" fkCardinality="7" identifying="false" name="ANIMAL_ATENDIMENTO_fk" physicalName="ANIMAL_ATENDIMENTO_FK" pk-table-ref="TAB40" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP95" populated="true" UUID="ce8b7b9e-7820-4916-9740-37b6ce2c9e7a" fk-column-ref="COL59" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL41" />
    </relationship>
-   <relationship id="REL96" populated="true" UUID="b24dce9d-c28f-48ea-806f-c184b20ee78f" deferrability="7" deleteRule="3" fk-table-ref="TAB67" fkCardinality="7" identifying="true" name="ATENDIMENTO_ATENDIMENTO_INSUMO_fk" physicalName="ATENDIMENTO_ATENDIMENTO_INS85" pk-table-ref="TAB57" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP97" populated="true" UUID="64146c62-ecd7-4553-a587-7036b29ada7d" fk-column-ref="COL70" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL58" />
+   <relationship id="REL96" populated="true" UUID="b24dce9d-c28f-48ea-806f-c184b20ee78f" deferrability="7" deleteRule="3" fk-table-ref="TAB67" fkCardinality="7" identifying="true" name="ATND_ATND_INSU_fk" physicalName="ATND_ATND_INSU_FK" pk-table-ref="TAB57" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP97" populated="true" UUID="b8f04fba-9061-4dee-b565-330c7f74bc3a" fk-column-ref="COL70" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL58" />
    </relationship>
-   <relationship id="REL98" populated="true" UUID="eb3eb949-f811-492e-8046-777e4c98311b" deferrability="7" deleteRule="3" fk-table-ref="TAB76" fkCardinality="7" identifying="true" name="ATENDIMENTO_Atendimento e Procedimentos_fk" physicalName="ATENDIMENTO_ATENDIMENTO_E_P750" pk-table-ref="TAB57" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP99" populated="true" UUID="234901cb-5bdb-4397-bbf2-594d06a8d0b3" fk-column-ref="COL79" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL58" />
+   <relationship id="REL98" populated="true" UUID="eb3eb949-f811-492e-8046-777e4c98311b" deferrability="7" deleteRule="3" fk-table-ref="TAB76" fkCardinality="7" identifying="true" name="ATEND_ATEND_PROCED_fk" physicalName="ATEND_ATEND_PROCED_FK" pk-table-ref="TAB57" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP99" populated="true" UUID="aec5be25-11f9-4ad9-9ae4-9c907f1d4904" fk-column-ref="COL79" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL58" />
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.Oracle8DDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.Oracle8DDLGenerator" allow-connection="false"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
