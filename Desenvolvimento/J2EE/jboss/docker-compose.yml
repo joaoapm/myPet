@@ -1,0 +1,41 @@
+version: '3'
+services:
+  # we named our first service 'web'
+  jboss:
+    # pass a hostname to the container (optinal)
+    hostname: jboss
+    
+    # build a custom image 
+    build:
+      context: .
+      dockerfile: docker/jboss.dockerfile
+    
+    # a name for easier reference
+    image: goodbytes.local
+
+    # map host port 8080 to container port 80
+    ports:
+        - "9990:9990"
+        - "8080:8080"
+    
+    # volumes are like shared folders
+    # container will see your local code changes
+    volumes:
+      - ./www:/app
+      
+    links:
+      - oraclebd
+      
+  oraclebd:
+    # pass a hostname to the container (optinal)
+    hostname: oraclebd    
+ 
+    # a name for easier reference
+    image: sath89/oracle-12c
+
+    # map host port 8080 to container port 80
+    ports:
+        - "1521:1521"
+        - "8090:8090"
+    
+ 
