@@ -1,30 +1,28 @@
 version: '3'
 services:
-  # we named our first service 'web'
+ 
   jboss:
-    # pass a hostname to the container (optinal)
+ 
     hostname: jboss
-    
-    # build a custom image 
+     
     build:
       context: .
       dockerfile: docker/jboss.dockerfile
-    
-    # a name for easier reference
+     
     image: goodbytes.local
-
-    # map host port 8080 to container port 80
+ 
     ports:
         - "9990:9990"
         - "8080:8080"
-    
-    # volumes are like shared folders
-    # container will see your local code changes
+     
     volumes:
-      - ./www:/app
+      - ./deployment:/opt/jboss/wildfly/standalone/deployments/
+      - ./configuration/standalone.xml:/opt/jboss/wildfly/standalone/configuration/standalone.xml
       
     links:
       - oraclebd
+      
+    container_name: jboss
       
   oraclebd:
     # pass a hostname to the container (optinal)
@@ -37,5 +35,7 @@ services:
     ports:
         - "1521:1521"
         - "8090:8090"
+        
+    container_name: oraclebd
     
  

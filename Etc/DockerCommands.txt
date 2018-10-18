@@ -1,0 +1,9 @@
+Iniciar:  docker-compose up -d
+
+Abrir terminal em container rodando: docker exec -it jboss bash
+
+List all containers (only IDs) => docker ps -aq
+Listar Imagens => docker list images
+
+Stop all running containers. => docker stop $(docker ps -aq)
+Remover todos containers: =>  docker rm $(docker ps -aq)
