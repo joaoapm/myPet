@@ -37,7 +37,7 @@ services:
         - "8080:8080"
 
     volumes:
-      - ./oradata:/u01/app/oracle/oradata 
+      - ./oradata:/u01/app/oracle/ 
       
     container_name: oraclebd
     
