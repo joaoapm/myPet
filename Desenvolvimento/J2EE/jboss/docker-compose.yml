@@ -13,10 +13,10 @@ services:
  
     ports:
         - "9990:9990"
-        - "8080:8080"
+        - "8585:8080"
      
     volumes:
-      - ./deployment:/opt/jboss/wildfly/standalone/deployments/
+      - ./deployment:/opt/jboss/wildfly/standalone/deployments/ 
       - ./configuration/standalone.xml:/opt/jboss/wildfly/standalone/configuration/standalone.xml
       
     links:
@@ -26,16 +26,19 @@ services:
       
   oraclebd:
     # pass a hostname to the container (optinal)
-    hostname: oraclebd    
- 
+    hostname: oraclebd     
+      
     # a name for easier reference
     image: sath89/oracle-12c
 
     # map host port 8080 to container port 80
     ports:
         - "1521:1521"
-        - "8090:8090"
-        
+        - "8080:8080"
+
+    volumes:
+      - ./oradata:/u01/app/oracle/oradata 
+      
     container_name: oraclebd
     
  
