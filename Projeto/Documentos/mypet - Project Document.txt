@@ -1,0 +1,14 @@
+
+
+- Softwares
+	- https://dbeaver.io/download/ - DBeaver
+	- http://www.bestofbi.com/page/architect_download_os - SQL Power Architect
+	
+- DB Schema
+CREATE USER mypetdb IDENTIFIED BY mypetdb;
+
+grant connect to mypetdb;
+grant all privileges to mypetdb;
+
+
+COMMIT
