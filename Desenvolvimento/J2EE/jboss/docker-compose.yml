@@ -33,8 +33,7 @@ services:
 
     # map host port 8080 to container port 80
     ports:
-        - "1521:1521"
-        - "8080:8080"
+        - "1521:1521" 
 
     volumes:
       - ./oradata:/u01/app/oracle/ 
