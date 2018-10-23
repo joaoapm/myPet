@@ -2,6 +2,7 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
+
 	<title>myPet</title>
 
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -10,21 +11,30 @@
 
 	<link href="assets/css/paper-dashboard.css" rel="stylesheet" />
 
-	<link href="/assets/css/themify-icons.css" rel="stylesheet"
-		type="text/css" />
+	<link href="/assets/css/themify-icons.css" rel="stylesheet" type="text/css" />
+	
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    
+    
+    
 </h:head>
+
+
 <h:body>
 
 	<div class="wrapper">
-
-
 
 		<ui:insert name="sidebar">
 			<ui:include src="/template/sidebar.xhtml">
 			</ui:include>
 		</ui:insert>
 
- 
+		<ui:insert name="dados">		
+		</ui:insert>
 
 	</div>
 </h:body>
