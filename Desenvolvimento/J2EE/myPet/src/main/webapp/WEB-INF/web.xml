@@ -14,4 +14,15 @@
 		<url-pattern>*.xhtml</url-pattern>
 		<url-pattern>/javax.faces.resource/*</url-pattern>
 	</servlet-mapping>
+
+	<filter>
+		<filter-name>PageFilter</filter-name>
+		<filter-class>br.com.mypet.util.PageFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>PageFilter</filter-name>
+		<url-pattern>/cadastros/*</url-pattern>
+	</filter-mapping>
+
 </web-app>
