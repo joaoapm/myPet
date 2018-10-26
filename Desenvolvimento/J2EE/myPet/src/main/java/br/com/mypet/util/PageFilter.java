@@ -20,7 +20,7 @@ public class PageFilter implements Filter {
 			throws IOException, ServletException {
 
 		HttpSession sess = ((HttpServletRequest) request).getSession(true);
-
+System.out.print("asdd");
 		String newCurrentPage = ((HttpServletRequest) request).getServletPath();
 
 		if (sess.getAttribute("currentPage") == null) {
@@ -32,7 +32,7 @@ public class PageFilter implements Filter {
 			if (!oldCurrentPage.equals(newCurrentPage)) {
 				sess.setAttribute("lastPage", oldCurrentPage);
 				sess.setAttribute("currentPage", newCurrentPage);
-			}
+			}     
 		}
 
 		chain.doFilter(request, response);

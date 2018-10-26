@@ -14,15 +14,19 @@ services:
     ports:
         - "9990:9990"
         - "8585:8080"
+        - "8787:8787"
      
     volumes:
       - ./deployment:/opt/jboss/wildfly/standalone/deployments/ 
       - ./configuration/standalone.xml:/opt/jboss/wildfly/standalone/configuration/standalone.xml
+      - ./configuration/iniciar.sh:/opt/jboss/wildfly/standalone/configuration/iniciar.sh
       
     links:
       - oraclebd
       
     container_name: jboss
+   
+    entrypoint: /opt/jboss/wildfly/standalone/configuration/iniciar.sh   
       
   oraclebd:
     # pass a hostname to the container (optinal)
