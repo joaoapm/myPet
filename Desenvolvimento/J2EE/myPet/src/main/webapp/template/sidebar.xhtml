@@ -1,8 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+ <html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
-<body>
 	<ui:composition>
 		
 		<div class="sidebar" data-background-color="white" data-active-color="danger">
@@ -27,16 +25,19 @@
 							<i class="ti-map"></i>
 							<p>Procedimentos</p>
 						</a>
+						
+					<li> 
+						 <h:commandLink action="#{login.deslogar}" value="Sair"  />  
+					</li> 	
+					
+											
 					</li> 					
  
 				</ul>
 			</div>
 			
 		</div>
-		
-	</ui:composition>
-</body>
+ 
+ </ui:composition>
 </html>
-
-
 

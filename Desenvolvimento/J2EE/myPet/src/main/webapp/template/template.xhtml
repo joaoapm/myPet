@@ -5,34 +5,46 @@
 
 	<title>myPet</title>
 
-	<link href="#{facesContext.externalContext.requestContextPath}/assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+	<link
+		href="#{facesContext.externalContext.requestContextPath}/assets/css/bootstrap.min.css"
+		rel="stylesheet" id="bootstrap-css" />
 
-	<link href="#{facesContext.externalContext.requestContextPath}/assets/css/animate.min.css" rel="stylesheet" />
+	<link
+		href="#{facesContext.externalContext.requestContextPath}/assets/css/animate.min.css"
+		rel="stylesheet" />
 
-	<link href="#{facesContext.externalContext.requestContextPath}/assets/css/paper-dashboard.css" rel="stylesheet" />
+	<link
+		href="#{facesContext.externalContext.requestContextPath}/assets/css/paper-dashboard.css"
+		rel="stylesheet" />
 
-	<link href="#{facesContext.externalContext.requestContextPath}/assets/css/themify-icons.css" rel="stylesheet" type="text/css" />
-	
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-      
+	<link
+		href="#{facesContext.externalContext.requestContextPath}/assets/css/themify-icons.css"
+		rel="stylesheet" type="text/css" />
+
+	<script
+		src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link
+		href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		rel="stylesheet" />
+
 </h:head>
 
 
 <h:body>
+	<h:form>
+		<div class="wrapper">
 
-	<div class="wrapper">
+			<ui:insert name="sidebar">
+				<ui:include src="/template/sidebar.xhtml">
+				</ui:include>
+			</ui:insert>
 
-		<ui:insert name="sidebar">
-			<ui:include src="/template/sidebar.xhtml">
-			</ui:include>
-		</ui:insert>
+			<ui:insert name="dados">
+			</ui:insert>
 
-		<ui:insert name="dados">	 
-		</ui:insert>
-
-	</div>
+		</div>
+	</h:form>
 </h:body>
 
 </html>

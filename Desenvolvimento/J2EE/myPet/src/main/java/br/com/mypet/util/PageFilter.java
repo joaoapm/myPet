@@ -23,20 +23,23 @@ public class PageFilter implements Filter {
 		HttpServletRequest httprequest = (HttpServletRequest) request;
 		HttpServletResponse httpresponse = (HttpServletResponse) response;
 		HttpSession session = httprequest.getSession(false);
-		
-		String loginURI = httprequest.getContextPath() + "/login.xhtml";
 
-		boolean loggedIn = session != null && session.getAttribute("user") != null;
+		String loginURI = httprequest.getContextPath() + "/mypet/login.xhtml";
+		String indexURI = httprequest.getContextPath() + "/mypet/index.xhtml";
+
+		boolean loggedIn = session != null && session.getAttribute("usuarioLogado") != null;
 		boolean loginRequest = httprequest.getRequestURI().equals(loginURI);
 
-		if (loggedIn || loginRequest) {
+		if (loggedIn && ("/mypet/login.xhtml".equals(httprequest.getRequestURI()))) {
+			httpresponse.sendRedirect(indexURI);
+		} else if (loggedIn || loginRequest) {
 			chain.doFilter(request, response);
 		} else {
 			httpresponse.sendRedirect(loginURI);
 		}
 	}
 
-	public void init(FilterConfig arg0) throws ServletException { 
+	public void init(FilterConfig arg0) throws ServletException {
 
 	}
 
