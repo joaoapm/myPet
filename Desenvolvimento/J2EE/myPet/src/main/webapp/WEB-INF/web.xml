@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-	<display-name>Devmedia - Primeiros passos JSF</display-name>
-
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">  
+	
 	<servlet>
 		<servlet-name>Faces Servlet</servlet-name>
 		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
@@ -22,7 +21,8 @@
 
 	<filter-mapping>
 		<filter-name>PageFilter</filter-name>
-		<url-pattern>/cadastros/*</url-pattern>
+		<url-pattern>/mypet/cadastros/usuario/*</url-pattern>
+		<url-pattern>/mypet/*</url-pattern>
 	</filter-mapping>
 
 </web-app>

@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 public class PageFilter implements Filter {
@@ -19,28 +20,23 @@ public class PageFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 
-		HttpSession sess = ((HttpServletRequest) request).getSession(true);
-System.out.print("asdd");
-		String newCurrentPage = ((HttpServletRequest) request).getServletPath();
+		HttpServletRequest httprequest = (HttpServletRequest) request;
+		HttpServletResponse httpresponse = (HttpServletResponse) response;
+		HttpSession session = httprequest.getSession(false);
+		
+		String loginURI = httprequest.getContextPath() + "/login.xhtml";
 
-		if (sess.getAttribute("currentPage") == null) {
-			sess.setAttribute("lastPage", newCurrentPage);
-			sess.setAttribute("currentPage", newCurrentPage);
+		boolean loggedIn = session != null && session.getAttribute("user") != null;
+		boolean loginRequest = httprequest.getRequestURI().equals(loginURI);
+
+		if (loggedIn || loginRequest) {
+			chain.doFilter(request, response);
 		} else {
-
-			String oldCurrentPage = sess.getAttribute("currentPage").toString();
-			if (!oldCurrentPage.equals(newCurrentPage)) {
-				sess.setAttribute("lastPage", oldCurrentPage);
-				sess.setAttribute("currentPage", newCurrentPage);
-			}     
+			httpresponse.sendRedirect(loginURI);
 		}
-
-		chain.doFilter(request, response);
-
 	}
 
-	public void init(FilterConfig arg0) throws ServletException {
-		// TODO Auto-generated method stub
+	public void init(FilterConfig arg0) throws ServletException { 
 
 	}
 
