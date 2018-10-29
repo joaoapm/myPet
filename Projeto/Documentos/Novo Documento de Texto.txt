@@ -1,0 +1,7 @@
+CREATE USER adm_mypet IDENTIFIED BY adm_mypet;
+
+grant connect to adm_mypet;
+grant all privileges to adm_mypet;
+
+
+COMMIT
