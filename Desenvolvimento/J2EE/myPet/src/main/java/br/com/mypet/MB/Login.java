@@ -1,8 +1,10 @@
 package br.com.mypet.MB;
 
 import javax.annotation.ManagedBean;
+import javax.ejb.EJB;
 import javax.faces.bean.ApplicationScoped;
 
+import br.com.mypet.ent.UsuarioService;
 import br.com.mypet.util.SessionContext;
 import ed.Usuario;
 
@@ -11,9 +13,14 @@ import ed.Usuario;
 public class Login {
 
 	private Usuario usuario;
+	
+	@EJB
+	private UsuarioService usuarioService;
 
 	public String logar() {
-
+		
+		usuarioService.consultaUsuario(usuario);
+		
 		if (usuario != null) {
 			SessionContext.getInstance().setAttribute("usuarioLogado", usuario);
 			return "index";
