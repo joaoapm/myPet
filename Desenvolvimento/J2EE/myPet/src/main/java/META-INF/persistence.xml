@@ -3,7 +3,7 @@
 	<persistence-unit name="myPet">
 	<jta-data-source>java:/oracle</jta-data-source>
 	 
-		<class>ed.Usuario</class>
+		<class>br.com.mypet.entidades.Usuario</class>
 
 	</persistence-unit>
 </persistence>

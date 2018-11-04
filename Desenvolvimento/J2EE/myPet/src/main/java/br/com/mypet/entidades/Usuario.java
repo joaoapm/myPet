@@ -1,4 +1,4 @@
-package ed;
+package br.com.mypet.entidades;
 
 import java.io.Serializable;
 

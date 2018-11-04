@@ -4,9 +4,9 @@ import javax.annotation.ManagedBean;
 import javax.ejb.EJB;
 import javax.faces.bean.ApplicationScoped;
 
-import br.com.mypet.ent.UsuarioService;
+import br.com.mypet.entidades.Usuario;
+import br.com.mypet.servicos.UsuarioServico;
 import br.com.mypet.util.SessionContext;
-import ed.Usuario;
 
 @ManagedBean
 @ApplicationScoped
@@ -15,7 +15,7 @@ public class Login {
 	private Usuario usuario;
 	
 	@EJB
-	private UsuarioService usuarioService;
+	private UsuarioServico usuarioService;
 
 	public String logar() {
 		

@@ -1,13 +1,13 @@
-package br.com.mypet.ent;
+package br.com.mypet.servicos;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import ed.Usuario;
+import br.com.mypet.entidades.Usuario;
 
 @Stateless
-public class UsuarioServiceImpl implements UsuarioService {
+public class UsuarioServicoImpl implements UsuarioServico {
 	
 	@PersistenceContext(name = "myPet")
 	private EntityManager em;
