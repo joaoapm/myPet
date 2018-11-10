@@ -1,13 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>br.com</groupId>
-	<artifactId>myPet</artifactId>
-	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>myPet Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<groupId>br.com.mypet</groupId>
+	<artifactId>mypet</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0</version>
+	<name>myPet</name>	
+
+	<modules>
+		<module>mypet-web</module>
+		<module>mypet-ejb</module>
+		<module>mypet-ear</module>  
+	</modules>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
