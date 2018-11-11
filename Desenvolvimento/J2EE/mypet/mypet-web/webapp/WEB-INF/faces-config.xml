@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_3_0.xsd"
+	version="3.0">
 
-<faces-config
-    xmlns="http://java.sun.com/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
-    version="2.0">
+	<managed-bean>
+		<managed-bean-name>login</managed-bean-name>
+		<managed-bean-class>br.com.mypet.MB.Login</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<navigation-rule>
+		<navigation-case>
+			<to-view-id>/mypet/index.xhtml</to-view-id>
+			<from-outcome>index</from-outcome>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<navigation-case>
+			<to-view-id>/mypet/login.xhtml</to-view-id>
+			<from-outcome>login</from-outcome>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
 
 </faces-config>

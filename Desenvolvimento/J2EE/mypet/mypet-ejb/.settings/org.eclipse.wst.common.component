@@ -2,6 +2,7 @@
     <wb-module deploy-name="mypet-ejb">
         <wb-resource deploy-path="/" source-path="/ejbModule"/>
         <wb-resource deploy-path="/" source-path="/src/main/java" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/" source-path="/src"/>
         <property name="java-output-path" value="/mypet-ejb/build/classes"/>
     </wb-module>
 </project-modules>
