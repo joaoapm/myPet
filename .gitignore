@@ -1,2 +1,4 @@
 /Desenvolvimento/J2EE/jboss/oradata
 /Desenvolvimento/J2EE/jboss/deployment
+target/*
+build/*
