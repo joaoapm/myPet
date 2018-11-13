@@ -7,8 +7,8 @@ import javax.ejb.SessionContext;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 
-import main.java.br.com.mypet.entidades.Usuario;
-import main.java.br.com.mypet.servicos.UsuarioServico;
+import br.com.mypet.entidades.Usuario;
+import br.com.mypet.servicos.UsuarioServico;
 
 @ManagedBean
 @ApplicationScoped

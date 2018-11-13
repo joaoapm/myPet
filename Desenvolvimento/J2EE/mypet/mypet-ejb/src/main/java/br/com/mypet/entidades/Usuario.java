@@ -1,4 +1,4 @@
-package main.java.br.com.mypet.entidades;
+package br.com.mypet.entidades;
 
 
 
