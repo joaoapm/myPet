@@ -1,4 +1,6 @@
-package main.java.br.com.mypet.MB;
+package br.com.mypet.MB;
+
+ 
 
 import javax.ejb.EJB;
 import javax.ejb.SessionContext;
