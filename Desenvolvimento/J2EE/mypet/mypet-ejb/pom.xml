@@ -19,7 +19,7 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>src/br/com/mypet/</directory> 
+				<directory>src/main/br/com/mypet/</directory> 
 			</resource> 
 		</resources>
 		<plugins>

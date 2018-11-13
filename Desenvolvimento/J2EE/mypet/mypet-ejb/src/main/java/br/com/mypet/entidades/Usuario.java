@@ -1,4 +1,8 @@
-package br.com.mypet.entidades;
+package main.java.br.com.mypet.entidades;
+
+
+
+
 
 import java.io.Serializable;
 
