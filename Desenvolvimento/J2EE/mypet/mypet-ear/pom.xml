@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>br.com.mypet</groupId>
 	<artifactId>mypet-ear</artifactId>
 	<packaging>ear</packaging>
 	<version>1.0</version>
@@ -12,15 +13,15 @@
 		<version>1.0.0</version>
 	</parent>
 
-	<dependencies> 
-	
+	<dependencies>
+
 		<dependency>
 			<groupId>br.com.mypet</groupId>
 			<artifactId>mypet-ejb</artifactId>
 			<version>1.0.0</version>
-			<type>ejb</type> 
+			<type>ejb</type>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>br.com.mypet</groupId>
 			<artifactId>mypet-web</artifactId>
@@ -38,9 +39,16 @@
 				<version>2.10.1</version>
 				<configuration>
 					<version>7</version>
+					<modules>
+						<webModule>
+							<groupId>br.com.mypet</groupId>
+							<artifactId>mypet-web</artifactId>
+							<contextRoot>/</contextRoot>
+						</webModule>
+					</modules>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>

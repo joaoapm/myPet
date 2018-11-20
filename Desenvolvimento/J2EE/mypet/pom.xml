@@ -62,16 +62,6 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
- 
-					<modules>
-						<webModule>
-							<groupId>br.com.mypet</groupId>
-							<artifactId>mypet-web</artifactId>
-							<contextRoot>/teste</contextRoot>
-						</webModule>
-					</modules>
-
-
 				</configuration>
 			</plugin>
 		</plugins>

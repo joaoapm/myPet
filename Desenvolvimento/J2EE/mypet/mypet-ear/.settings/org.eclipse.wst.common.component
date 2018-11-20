@@ -2,10 +2,10 @@
     <wb-module deploy-name="myPet">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
-        <dependent-module archiveName="mypet-ejb-1.0.0.jar" deploy-path="/" handle="module:/resource/mypet-ejb/mypet-ejb">
+        <dependent-module archiveName="mypet-web-1.0.0.war" deploy-path="/" handle="module:/resource/mypet-web/mypet-web">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="mypet-web-1.0.0.war" deploy-path="/" handle="module:/resource/mypet-web/mypet-web">
+        <dependent-module archiveName="mypet-ejb-1.0.0.jar" deploy-path="/" handle="module:/resource/mypet-ejb/mypet-ejb">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="richfaces-4.5.17.Final.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/richfaces/richfaces/4.5.17.Final/richfaces-4.5.17.Final.jar">
