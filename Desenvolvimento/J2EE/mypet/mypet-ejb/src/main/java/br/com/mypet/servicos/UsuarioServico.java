@@ -7,6 +7,6 @@ import br.com.mypet.entidades.Usuario;
 @Remote
 public interface UsuarioServico {
 
-	public void consultaUsuario(Usuario usuario);
+	public Usuario consultaUsuario(Usuario usuario);
 
 }

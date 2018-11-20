@@ -7,16 +7,16 @@
 	<artifactId>mypet</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0.0</version>
-	<name>myPet</name>	
+	<name>myPet</name>
 
 	<modules>
 		<module>mypet-web</module>
 		<module>mypet-ejb</module>
-		<module>mypet-ear</module>  
+		<module>mypet-ear</module>
 	</modules>
 
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -51,7 +51,7 @@
 		</dependency>
 
 	</dependencies>
-	
+
 	<build>
 		<finalName>myPet</finalName>
 		<plugins>
@@ -62,9 +62,19 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+ 
+					<modules>
+						<webModule>
+							<groupId>br.com.mypet</groupId>
+							<artifactId>mypet-web</artifactId>
+							<contextRoot>/teste</contextRoot>
+						</webModule>
+					</modules>
+
+
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>

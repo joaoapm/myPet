@@ -13,8 +13,7 @@ public class UsuarioServicoImpl implements UsuarioServico {
 	private EntityManager em;
 
 	@Override
-	public void consultaUsuario(Usuario usuario) {
-		em.find(Usuario.class, 0);
-
+	public Usuario consultaUsuario(Usuario usuario) {
+		return em.find(Usuario.class, 0);
 	}
 }
