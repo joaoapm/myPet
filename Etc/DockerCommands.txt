@@ -1,4 +1,4 @@
-Iniciar:  docker-compose up -d
+﻿Iniciar:  docker-compose up -d
 
 Abrir terminal em container rodando: docker exec -it jboss bash
 
@@ -7,3 +7,10 @@ Listar Imagens => docker list images
 
 Stop all running containers. => docker stop $(docker ps -aq)
 Remover todos containers: =>  docker rm $(docker ps -aq)
+
+Logs: docker logs -f <container id>
+
+
+ Git config:
+ * 'C:\Program Files\Git\bin\git.exe' config --global core.autocrlf false
+ * UTF-8

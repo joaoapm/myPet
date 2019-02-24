@@ -1,3 +1,3 @@
-FROM jboss/wildfly
+﻿FROM jboss/wildfly
 
 EXPOSE 9990
